@@ -1,0 +1,49 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+header {
+  background: url(Images/foodpattern.png);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #E64A19; /* Darker deep orange border bottom */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+article {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+aside {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensure image doesn't have extra spacing */
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333; /* Dark gray background */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
