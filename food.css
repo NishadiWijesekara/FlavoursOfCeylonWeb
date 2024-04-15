@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(Images/Abcd.jpg);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  margin-bottom: 40px;
+  color:#fff;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.section-content {
+  margin-bottom: 40px;
+}
+
+.section-content ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.section-content li {
+  margin-bottom: 10px;
+}
+
+.section-content p {
+  margin: 10px 0;
+}

@@ -1,0 +1,92 @@
+
+body {
+	background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(Images/Abcd.jpg);
+	background-size:cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style for each grid item (comments and suggestions) */
+.comments, .suggestions {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Adjust the width of the input fields and text areas */
+.comments input[type="text"],
+.comments textarea,
+.suggestions input[type="text"],
+.suggestions textarea {
+    width: calc(100% - 20px); /* Subtract the padding from the width */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+.suggestions {
+    background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Ensure suggestions appear above the background image */
+}
+
+
+.comments {
+    background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Ensure comments appear above the background image */
+}
+
+/* Style the buttons */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Set up the output container */
+.output-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Adjust the width of the output containers */
+.comment-output,
+.suggestion-output {
+    width: 45%; /* Each container takes up 45% of the available space */
+	color:#fff;
+}
+
+/* Remove margin from list items */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+/* Add space between list items */
+li {
+    margin-bottom: 10px;
+}

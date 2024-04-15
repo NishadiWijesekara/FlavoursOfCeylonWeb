@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Sri Lankan Food Recipes|FlavoursOfCeylon</title>
+		<link rel = "stylesheet" href="style.css">
+		<meta name ="viewport" content="width" =device-width, initial-scale=1>
+	</head>
+	
+	<body class="background-img">
+	
+   
+	<img src = "Images/logo2.png" class="logo">
+	<div class = "text">
+		<h1>FlavoursOfCeylon</h1>
+		<p>Top Sri Lankan food Recipes</P>
+	<div class = "btn">
+		<a href="find.html"><span></span>Find Out</a>
+		<a href="Food.html"><span></span>Read More</a>
+		</div>
+	</div>
+	
+	
+	
+	
+	<!-- Side Navigation -->
+	
+	<div id = "sideNav">
+		
+		<div id="Menubtn">
+		<img src = "Images/menu.png" id = "menu">
+	</div>
+	
+		<script>
+		var Menubtn = document.getElementById("Menubtn")
+		var sideNav = document.getElementById("sideNav")
+		var menu = document.getElementById("menu")
+		
+		sideNav.style.right = "-250px";
+		
+		Menubtn.onclick = function(){
+			if(sideNav.style.right == "-250px"){
+				sideNav.style.right = "0";
+				menu.src = "Images/close.png";
+		}
+		else{
+			sideNav.style.right = "-250px";
+				menu.src = "Images/menu.png";
+		}
+		} 
+		</script>
+		<nav>
+		<ul>
+			<li><a href = "FlavourofCeylon- Main web page.html">HOME</a></li>
+			<li><a href = "Web2.html">Featured Recipes</a></li>
+			<li><a href = "curries.html">Curries</a></li>
+			<li><a href = "Sweets.html">Sweets</a></li>
+			<li><a href = "Drinks.html">Drinks</a></li>
+		</ul>
+		</nav>
+		</div>
+		
+			
+	</body>
+
+
+</html>  

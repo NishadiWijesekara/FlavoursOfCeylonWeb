@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="find.css">
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="comments">
+            <h2>Your Comments About Us!</h2>
+            <input type="text" id="comment-name" placeholder="Your Name">
+            <textarea id="comment-text" placeholder="Your Comment"></textarea>
+            <button onclick="submitComment()">Submit</button>
+        </div>
+
+        <div class="suggestions">
+            <h2>Suggestions for New Recipes</h2>
+            <input type="text" id="suggestion-name" placeholder="Your Name">
+            <textarea id="suggestion-text" placeholder="Your Suggestion"></textarea>
+            <button onclick="submitSuggestion()">Submit</button>
+        </div>
+    </div>
+
+    <div class="output-container">
+        <div class="comment-output">
+            <h3>Comments:</h3>
+            <ul id="comment-list"></ul>
+        </div>
+
+        <div class="suggestion-output">
+            <h3>Suggestions:</h3>
+            <ul id="suggestion-list"></ul>
+        </div>
+    </div>
+
+    <script src="find.js"></script>
+</body>
+</html>
